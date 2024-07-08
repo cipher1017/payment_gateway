@@ -1,0 +1,4 @@
+virtual env: onepant
+
+For reference, I used https://github.com/martinmogusu/django-daraja?tab=readme-ov-file
+https://django-daraja.readthedocs.io/en/latest/pages/quick_start.html

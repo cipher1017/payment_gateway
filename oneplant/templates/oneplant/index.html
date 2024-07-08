@@ -1,2 +1,12 @@
-<p>No polls are available.</p>
+{% extends "oneplant/base.html" %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'oneplant/style.css' %}">
+
+
+{% block content %}
 <h1>We would love to hear from your story</h1>
+<button class="btn btn-primary">Donate</button>
+{% endblock content %}
+
