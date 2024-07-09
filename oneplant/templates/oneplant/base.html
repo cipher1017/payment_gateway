@@ -1,56 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Donations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f6f8fa;
+            color: #24292e;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #2ea44f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            border: 1px solid #2ea44f;
+        }
+
+        .hero .btn:hover {
+            background-color: white;
+            color: #2ea44f;
+        }
+
+        main {
+            padding: 20px 0;
+            background-color: white;
+        }
+
+        section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0366d6;
+        }
+
+        footer {
+            background-color: #24292e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .subscription-form input[type="email"] {
+            padding: 10px;
+            width: 70%;
+            margin-right: 10px;
+            border: 1px solid #d1d5da;
+            border-radius: 5px;
+        }
+
+        footer .subscription-form button {
+            padding: 10px 20px;
+            background-color: #0366d6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer .subscription-form button:hover {
+            background-color: #005cc5;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contacts</a>
-      </li>
-<!--      <li class="nav-item dropdown">-->
-<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--          Dropdown-->
-<!--        </a>-->
-<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--          <a class="dropdown-item" href="#">Action</a>-->
-<!--          <a class="dropdown-item" href="#">Another action</a>-->
-<!--          <div class="dropdown-divider"></div>-->
-<!--          <a class="dropdown-item" href="#">Something else here</a>-->
+    <header>
+        <div class="container">
+<!--            <div class="logo">DevDonations</div>-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Support Developer Projects</h1>
+            <p>Your donations help developers bring their ideas to life.</p>
+            <a href="{% url 'index' %}" class="btn">Donate Now</a>
+        </div>
+    </section>
+<!--    <main>-->
+<!--        <section class="recent-donations">-->
+<!--            <div class="container">-->
+<!--                <h2>Recent Donations</h2>-->
+<!--                &lt;!&ndash; Add recent donation items here &ndash;&gt;-->
+<!--            </div>-->
+<!--        </section>-->
+<!--        <section class="featured-projects">-->
+<!--            <div class="container">-->
+<!--                <h2>Featured Projects</h2>-->
+<!--                &lt;!&ndash; Add featured projects here &ndash;&gt;-->
+<!--            </div>-->
+<!--        </section>-->
+<!--        <section class="testimonials">-->
+<!--            <div class="container">-->
+<!--                <h2>What Developers Say</h2>-->
+<!--                &lt;!&ndash; Add testimonials here &ndash;&gt;-->
+<!--            </div>-->
+<!--        </section>-->
+<!--    </main>-->
+<!--    <footer>-->
+<!--        <div class="container">-->
+<!--            <div class="social-media">-->
+<!--                &lt;!&ndash; Add social media links here &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="contact-info">-->
+<!--                &lt;!&ndash; Add contact info here &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="subscription-form">-->
+<!--                <h3>Subscribe to our newsletter</h3>-->
+<!--                <form action="#">-->
+<!--                    <input type="email" placeholder="Your email address">-->
+<!--                    <button type="submit">Subscribe</button>-->
+<!--                </form>-->
+<!--            </div>-->
 <!--        </div>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link disabled" href="#">Disabled</a>-->
-<!--      </li>-->
-    </ul>
-<!--    <form class="form-inline my-2 my-lg-0">-->
-<!--      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-<!--      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-<!--    </form>-->
-  </div>
-</nav>
-<div class="container">
-    {% block content %}
-    {% endblock content %}
-</div>
-
+<!--    </footer>-->
 </body>
 </html>
